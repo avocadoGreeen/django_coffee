@@ -1,0 +1,175 @@
+{% extends 'coffeeApp/layout.html' %}
+
+{% block content %}
+{% load static %}
+
+    <div class="top__content">
+        <div class="container">
+            <div class="top__inner">
+                <div class="top__content-title">Coffee&Milk</div>
+                <div class="top__content-subtitle">Начни своё утро с кофе</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="why__we">
+    <div class="container">
+        <div class="why-info">
+            <h2 class="why-info__title title">
+                Почему мы?
+            </h2>
+            <div class="why-info__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa dignissimos error fugiat
+                illo ipsam libero magnam magni mollitia nisi, odio omnis quasi.
+            </div>
+        </div>
+        <div class="why__items">
+            <div class="why-items__inner">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card text-center shadow">
+                            <a href="#" class="card-body">
+                                <img src="{% static 'img/why1.png' %}" alt="why1">
+                                <h5 class="card-title title">
+                                    Зёрна A+ класса
+                                </h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card text-center shadow">
+                            <a href="#" class="card-body">
+                                <img src="{% static 'img/why2.png' %}" alt="why1">
+                                <h5 class="card-title title">
+                                    Свежие булочки
+                                </h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card text-center shadow">
+                            <a href="" class="card-body">
+                                <img src="{% static 'img/why3.png' %}" alt="why1">
+                                <h5 class="card-title title">
+                                    Кофе с собой
+                                </h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="news">
+    <div class="container">
+        <div class="news__inner">
+            <div class="news__title title">
+                Наш полезный блог
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#" class="dark_link"><img src="{% static 'img/news1.jpg' %}" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#" class="card-title title">Вывели новый сорт кофе</a>
+                            <p class="card-text news-text">
+                                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+                                ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
+                            </p>
+                            <a href="#" class="btn-news">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#" class="dark_link"><img src="{% static 'img/news2.jpg' %}" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#" class="card-title title">Кофейный фестиваль 17 июля</a>
+                            <p class="card-text news-text">
+                                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+                                ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
+                            </p>
+                            <a href="#" class="btn-news">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="#" class="dark_link">
+                            <img src="{% static 'img/news3.jpg' %}" class="card-img-top"
+                                                          alt="...">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="card-title title">8 лучших книг о кофе</a>
+                            <p class="card-text news-text">
+                                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+                                ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
+                            </p>
+                            <a href="#" class="btn-news">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="photo-fixed"></div>
+    <section class="shop">
+    <div class="container">
+        <div class="shop__text">
+            <div class="shop__title title">
+                Наши товары
+            </div>
+            <div class="shop__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi consectetur, dolorem eos hic
+                libero  maxime molestias necessitatibus perspiciatis praesentium quidem sequi, unde, velit. Assumenda
+                dolore eius ipsam itaque nihil.
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{% static 'img/shop.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title title-card">Compagnia Dell'Arabica Jamaica Blue Mountain 1,5 кг</a>
+                            <div class="shop-price">45 500 ₽</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{% static 'img/shop.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title title-card">Compagnia Dell'Arabica Jamaica Blue Mountain 1,5 кг</a>
+                            <div class="shop-price">45 500 ₽</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                            <img src="{% static 'img/shop.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="card-title title-card">Compagnia Dell'Arabica Jamaica Blue Mountain 1,5
+                                кг</a>
+                            <div class="shop-price">45 500 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
+{% endblock %}
