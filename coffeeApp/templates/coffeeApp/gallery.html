@@ -3,6 +3,46 @@
 {% block content %}
 {% load static %}
 
-<h1>Страница галереи</h1>
+<div class="gallery__top">
+    <div class="container">
+        <h1 class="top__content-title gallery__title">
+            Галерея
+        </h1>
+    </div>
+</div>
+<section class="gallery__photo">
+    <div class="container">
+        <div class="gallery__inner">
+            <div class="gallery__classic">
+               <h2 class="gallery__photo-title">Фото</h2>
+                <div class="gallery__photo-items">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/1.jpg' %}" alt="classic-1">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/5.jpg' %}" alt="classic-2">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/3.jpg' %}" alt="classic-3">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/4.jpg' %}" alt="classic-4">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/2.jpg' %}" alt="classic-5">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/6.jpg' %}" alt="classic-6">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/7.jpg' %}" alt="classic-7">
+                    <img class="gallery-item" src="{% static 'img/gallery/classic/8.jpg' %}" alt="classic-8">
+                </div>
+            </div>
+            <div class="gallery__vintage">
+               <h2 class="gallery__photo-title">Постеры</h2>
+                <div class="gallery__photo-items">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/1.jpg' %}" alt="vintage-1">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/2.jpg' %}" alt="vintage-2">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/3.jpg' %}" alt="vintage-3">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/4.jpg' %}" alt="vintage-4">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/5.jpg' %}" alt="vintage-5">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/6.jpg' %}" alt="vintage-6">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/7.jpg' %}" alt="vintage-7">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/8.jpg' %}" alt="vintage-8">
+                    <img class="gallery-item" src="{% static 'img/gallery/vintage/9.jpg' %}" alt="vintage-9">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 {% endblock %}

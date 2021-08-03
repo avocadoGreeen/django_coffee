@@ -1,0 +1,46 @@
+{% extends 'coffeeApp/layout.html' %}
+
+{% block content %}
+    <div class="login__top">
+        <div class="container">
+            <h1 class="top__content-title login__title">
+                Регистрация
+            </h1>
+        </div>
+    </div>
+
+    <div class="login__inner">
+        <div class="container">
+            {% if form.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <div class="register__form">
+                <div class="card-body">
+                    <h5 class="gallery__photo-title">Регистрация</h5>
+                    <form method="post">
+                        {% csrf_token %}
+                        <label>{{ form.username.label }}</label>
+                        {{ form.username }}
+                        <label>{{ form.password1.label }}</label>
+                        {{ form.password1 }}
+                        <label>{{ form.password2.label }}</label>
+                        {{ form.password2 }}
+                        <button class="register__btn" type="submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
