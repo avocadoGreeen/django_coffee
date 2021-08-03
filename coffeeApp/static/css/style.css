@@ -433,3 +433,32 @@ a.dark_link:hover img {
 	margin-bottom: 0;
 }
 
+.catalog__top{
+	color: #f5f5dc;
+	background: url("../img/topfon.jpg") center center no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.catalog__title{
+	margin: 115px;
+}
+.catalog{
+	margin-top: 190px
+}
+.catalog .card:hover{
+	background-color: #6f4e37;
+	color: #f5f5dc;
+}
+
+.catalog img{
+	max-width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+.catalog .row{
+	padding-bottom: 50px;
+}
