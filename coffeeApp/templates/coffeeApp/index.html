@@ -18,8 +18,8 @@
                 Почему мы?
             </h2>
             <div class="why-info__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa dignissimos error fugiat
-                illo ipsam libero magnam magni mollitia nisi, odio omnis quasi.
+                Мы ценим наших клиентов, отбираем зерна высшего класса, выпекаем самые мягкие и вкусные булочки,
+                собираем заказы с собой.
             </div>
         </div>
         <div class="why__items">
@@ -33,7 +33,7 @@
                                     Зёрна A+ класса
                                 </h5>
                                 <p class="card-text">
-                                    With supporting text below as a natural lead-in to additional content.
+                                    Отбираем зерна высших сортов
                                 </p>
                             </a>
                         </div>
@@ -46,7 +46,7 @@
                                     Свежие булочки
                                 </h5>
                                 <p class="card-text">
-                                    With supporting text below as a natural lead-in to additional content.
+                                    Выпекаем самые мягкие и вкусные булочки к кофе
                                 </p>
                             </a>
                         </div>
@@ -59,7 +59,7 @@
                                     Кофе с собой
                                 </h5>
                                 <p class="card-text">
-                                    With supporting text below as a natural lead-in to additional content.
+                                    Собираем Вам заказы с собой
                                 </p>
                             </a>
                         </div>
@@ -72,9 +72,9 @@
     <section class="news">
     <div class="container">
         <div class="news__inner">
-            <div class="news__title title">
+            <a href="{% url 'blog' %}" class="news__title title">
                 Наш полезный блог
-            </div>
+            </a>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
@@ -85,7 +85,7 @@
                                 Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
                                 ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
                             </p>
-                            <a href="#" class="btn-news">Подробнее</a>
+                            <a href="{% url 'blog' %}" class="btn-news">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                                 Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
                                 ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
                             </p>
-                            <a href="#" class="btn-news">Подробнее</a>
+                            <a href="{% url 'blog' %}" class="btn-news">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                                 Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
                                 ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
                             </p>
-                            <a href="#" class="btn-news">Подробнее</a>
+                            <a href="{% url 'blog' %}" class="btn-news">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -126,13 +126,12 @@
     <section class="shop">
     <div class="container">
         <div class="shop__text">
-            <div class="shop__title title">
+            <a href="{% url 'catalog' %}" class="shop__title title">
                 Наши товары
-            </div>
+            </a>
             <div class="shop__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi consectetur, dolorem eos hic
-                libero  maxime molestias necessitatibus perspiciatis praesentium quidem sequi, unde, velit. Assumenda
-                dolore eius ipsam itaque nihil.
+                Мы предлагаем Вам широкий ассортимент различных сортов кофе из самых разнообразных стран.
+                    Лёгкий цветочный аромат, густая консистенция, приятное и долгое послевкусие.
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">

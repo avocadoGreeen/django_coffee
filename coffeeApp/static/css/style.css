@@ -174,6 +174,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .news__title{
 	padding-bottom: 55px;
+	display: inherit;
 }
 .news .card-body{
 	background: url("../img/foncard-news.JPG") repeat;
@@ -246,6 +247,7 @@ a.dark_link:hover img {
 .shop__title{
 	padding-top: 100px;
 	padding-bottom: 50px;
+	display: inherit;
 }
 .shop__subtitle{
 	font-family: Open Sans, serif;
@@ -461,4 +463,47 @@ a.dark_link:hover img {
 }
 .catalog .row{
 	padding-bottom: 50px;
+}
+
+.blog__top{
+	color: #f5f5dc;
+	background: url("../img/gallery-top.jpg") center center no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.blog__title{
+	margin: 115px;
+}
+.blog{
+	margin-top: 230px
+}
+.blog__inner{
+	background-image: url("../img/fonnews.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 3px solid #6f4e37;
+}
+.media-body p{
+	font-size: 16px;
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	margin-bottom: 30px;
+}
+.media-body .card-title{
+	font-size: 24px;
+}
+.media-body .login__btn{
+	display: inline-block;
+	margin: 0 252px;
+}
+.blog li{
+	list-style: circle;
+}
+a .detail__btn{
+	display: inline-block;
+	margin: 20px;
 }
