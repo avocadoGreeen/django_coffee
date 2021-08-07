@@ -1,0 +1,44 @@
+{% extends 'coffeeApp/layout.html' %}
+
+{% block content %}
+    <div class="blog__top">
+        <div class="container">
+            <h1 class="top__content-title blog__title">
+                Блог
+            </h1>
+        </div>
+    </div>
+
+    <section class="blog">
+        <div class="container">
+            <h2 class="blog__title title">
+                Наш блог
+            </h2>
+            {% for item in posts %}
+
+
+                <div class="card mb-3 blog__inner" style="max-width: 700px; margin: 0 auto;">
+                    <div class="card-body">
+                        <div class="media">
+                            {% if item.photo %}
+                                <img class="mr-3 img-card" src="{{ item.photo.url }}" width="350" vspace="5" hspace="5">
+                            {% else %}
+                                <img class="mr-3 img-card" src="https://picsum.photos/id/870/350/300?grayscale&blur=2" vspace="5" hspace="5">
+                            {% endif %}
+
+                            <div class="media-body">
+                                <h5 class="card-title">{{ item.title }}</h5>
+                                <p class="card-text blog__text">{{ item.content|safe|linebreaks|truncatewords:40 }}</p>
+                                <a href="{{ item.get_absolute_url }}" class="login__btn">Читать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        {{ item.created_at|date:"d.m.Y H:i" }}
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

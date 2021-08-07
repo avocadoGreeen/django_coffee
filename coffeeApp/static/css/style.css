@@ -42,41 +42,58 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
  ul{
 	 margin: 0;
  }
+
 .header{
-	font-family: 'Roboto', sans-serif;
+	background-color: transparent;
+	position: absolute;
 	width: 100%;
-	color: #f5f5dc;
-	z-index: 6;
-    position: relative;
+	z-index: 100;
 }
-.header-menu__inner{
+.header__content{
 	height: 100px;
-    display: flex;
-    justify-content: space-between;
-	align-items: center;
-}
-.menu-logo{
-    font-size: 32px;
-	font-weight: 700;
-	color: #f5f5dc;
-}
-.menu-logo:hover{
-	color: #f5f5dc;
-}
-.menu-list{
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
 }
-.menu-list li{
-	margin-left: 38px;
+.header__menu li{
+	display: inline-block;
 }
-.menu-list a{
-	font-size: 16px;
+.header__menu a{
 	color: #f5f5dc;
 	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 5px solid transparent;
+	transition: all .3s;
 }
-.menu-list a:hover{
+.header__menu a:hover{
 	border-bottom: 5px solid #f5f5dc;
-	transition: .3s;
+}
+.header__logo{
+	font-size: 32px;
+	color: #f5f5dc;
+	font-weight: 700;
+}
+.header__logo:hover{
+	color: #6f4e37;
+}
+.header__user{
+	color: #f5f5dc;
+}
+.login__btn{
+	margin-left: 15px;
+	font-size: 20px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #f5f5dc;
+	background-color: #6f4e37;
+	border: 2px solid transparent;
+	padding: 5px 15px;
+}
+.login__btn:hover{
+	background-color: #f5f5dc;
+	color: #6f4e37;
+	border: 2px solid #6f4e37;
 }
 
 .top__content{
@@ -94,7 +111,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .top__content-title{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 112px;
+	font-size: 25px;
 	font-weight: 700;
 	font-style: italic;
 	text-transform: uppercase;
@@ -381,7 +398,7 @@ a.dark_link:hover img {
 	border: 2px solid #6f4e37;
 	text-align: center;
 }
-.login__btn,
+
 .register__btn,
 .logout a{
 	font-size: 16px;
@@ -393,7 +410,7 @@ a.dark_link:hover img {
 	padding: 10px 15px;
 	margin-bottom: 20px;
 }
-.login__btn:hover,
+
 .register__btn:hover{
 	background-color: #f5f5dc;
 	color: #6f4e37;

@@ -13,28 +13,28 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
-        <div class="header-menu__inner">
-            <a class="menu-logo fas fa-mug-hot" href="/">
-                C&M
-            </a>
-            <ul class="menu-list">
-                <li><a href="{% url 'home' %}">Главная</a></li>
-                <li><a href="{% url 'blog' %}">Блог</a></li>
-                <li><a href="{% url 'catalog' %}">Каталог</a></li>
-                <li><a href="{% url 'gallery' %}">Галерея</a></li>
-            </ul>
-            <div class="user">
-            {% if request.user.is_authenticated %}
-                <div class="logout">
-                    <div class="user__name">
-                        {{ request.user|title }}
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo fas fa-mug-hot" href="/">
+                    Coffee&Milk
+                </a>
+                <ul class="header__menu">
+                    <li><a href="{% url 'home' %}">Главная</a></li>
+                    <li><a href="{% url 'blog' %}">Блог</a></li>
+                    <li><a href="{% url 'catalog' %}">Каталог</a></li>
+                    <li><a href="{% url 'gallery' %}">Галерея</a></li>
+                </ul>
+                <div class="header__user">
+                    {% if request.user.is_authenticated %}
+                    <div class="logout">
+                        <div class="user__name">
+                            {{ request.user|title }}
+                        </div>
+                        <a class="logout__btn" href="{% url 'logout' %}">Выйти</a>
                     </div>
-                    <a class="logout__btn" href="{% url 'logout' %}">Выйти</a>
-                </div>
-            {% else %}
-                <a class="login__btn" href="{% url 'login' %}">Войти</a>
-            {% endif %}
+                    {% else %}
+                        <a class="login__btn" href="{% url 'login' %}">Войти</a>
+                    {% endif %}
             </div>
         </div>
     </div>
