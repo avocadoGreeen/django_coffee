@@ -3,18 +3,19 @@
 {% block content %}
 {% load static %}
 
-    <div class="top__content login__content">
-        <div class="container">
-            <div class="top__inner">
-                <div class="top__content-title">Coffee&Milk</div>
+    <section class="fullscreen">
+            <div class="wrapper">
+            <div class="fullscreen__body">
+                <h1 class="fullscreen__title">Coffee&Milk</h1>
+                <div class="fullscreen__text">Начни свое утро с кофе!</div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="why__we">
     <div class="container">
         <div class="why-info">
-            <h2 class="why-info__title title">
+            <h2 class="title">
                 Почему мы?
             </h2>
             <div class="why-info__text">
@@ -23,13 +24,13 @@
             </div>
         </div>
         <div class="why__items">
-            <div class="why-items__inner">
+            <div class="why__inner">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card text-center shadow">
+                        <div class="card h-100 text-center shadow">
                             <a href="#" class="card-body">
                                 <img src="{% static 'img/why1.png' %}" alt="why1">
-                                <h5 class="card-title title">
+                                <h5 class="card-title">
                                     Зёрна A+ класса
                                 </h5>
                                 <p class="card-text">
@@ -39,10 +40,10 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card text-center shadow">
+                        <div class="card h-100 text-center shadow">
                             <a href="#" class="card-body">
                                 <img src="{% static 'img/why2.png' %}" alt="why1">
-                                <h5 class="card-title title">
+                                <h5 class="card-title">
                                     Свежие булочки
                                 </h5>
                                 <p class="card-text">
@@ -52,10 +53,10 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card text-center shadow">
+                        <div class="card h-100 text-center shadow">
                             <a href="" class="card-body">
                                 <img src="{% static 'img/why3.png' %}" alt="why1">
-                                <h5 class="card-title title">
+                                <h5 class="card-title">
                                     Кофе с собой
                                 </h5>
                                 <p class="card-text">
@@ -72,18 +73,18 @@
     <section class="news">
     <div class="container">
         <div class="news__inner">
-            <a href="{% url 'blog' %}" class="news__title title">
+            <a href="{% url 'blog' %}" class="link-title title">
                 Наш полезный блог
             </a>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4 row-bottom">
                 <div class="col">
                     <div class="card h-100">
                         <a href="#" class="dark_link"><img src="{% static 'img/news1.jpg' %}" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#" class="card-title title">Вывели новый сорт кофе</a>
+                            <a href="#" class="card-title">Как правильно приготовить мокачино</a>
                             <p class="card-text news-text">
-                                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                                ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
+                                Родина этого кофейного напитка — США, где его называют «мокко». Такое название
+                                появилось вследствие того...
                             </p>
                             <a href="{% url 'blog' %}" class="btn-news">Подробнее</a>
                         </div>
@@ -93,10 +94,10 @@
                     <div class="card h-100">
                         <a href="#" class="dark_link"><img src="{% static 'img/news2.jpg' %}" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#" class="card-title title">Кофейный фестиваль 17 июля</a>
+                            <a href="#" class="card-title">Основные виды кофейных напитков</a>
                             <p class="card-text news-text">
-                                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                                ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
+                                До того, как приобрести современный вид кофе был совсем непривычным нам по вкусу и
+                                консистенции, поскольку высушенные, но не обжаренные зерна заливали водой и...
                             </p>
                             <a href="{% url 'blog' %}" class="btn-news">Подробнее</a>
                         </div>
@@ -109,10 +110,10 @@
                                                           alt="...">
                         </a>
                         <div class="card-body">
-                            <a href="#" class="card-title title">8 лучших книг о кофе</a>
+                            <a href="#" class="card-title">Итальянские кофейные традиции</a>
                             <p class="card-text news-text">
-                                Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                                ullamcorper  ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,
+                                Италия — страна, в которой кофе вознесен практически в культ, просто обязана иметь
+                                море интересных правил, традиций и особенностей, связанных с напитком...
                             </p>
                             <a href="{% url 'blog' %}" class="btn-news">Подробнее</a>
                         </div>
@@ -122,11 +123,12 @@
         </div>
     </div>
     </section>
+
     <div class="photo-fixed"></div>
     <section class="shop">
     <div class="container">
         <div class="shop__text">
-            <a href="{% url 'catalog' %}" class="shop__title title">
+            <a href="{% url 'catalog' %}" class="link-title title">
                 Наши товары
             </a>
             <div class="shop__subtitle">
