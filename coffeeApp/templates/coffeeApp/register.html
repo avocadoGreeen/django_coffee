@@ -1,15 +1,15 @@
 {% extends 'coffeeApp/layout.html' %}
 
 {% block content %}
-    <div class="login__top">
-        <div class="container">
-            <h1 class="top__content-title login__title">
+    <div class="login__inner">
+        <div class="fullscreen__body">
+            <h1 class="fullscreen__title">
                 Регистрация
             </h1>
         </div>
     </div>
 
-    <div class="login__inner">
+    <div class="login__content">
         <div class="container">
             {% if form.errors %}
                 {% for field in form %}

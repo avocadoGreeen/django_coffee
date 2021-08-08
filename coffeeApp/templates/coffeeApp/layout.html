@@ -30,7 +30,7 @@
                         <div class="user__name">
                             {{ request.user|title }}
                         </div>
-                        <a class="logout__btn" href="{% url 'logout' %}">Выйти</a>
+                        <a class="login__btn" href="{% url 'logout' %}">Выйти</a>
                     </div>
                     {% else %}
                         <a class="login__btn" href="{% url 'login' %}">Войти</a>

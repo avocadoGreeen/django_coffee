@@ -1,28 +1,26 @@
 {% extends 'coffeeApp/layout.html' %}
 
 {% block content %}
-    <div class="blog__top">
-        <div class="container">
-            <h1 class="top__content-title blog__title">
-                Блог
-            </h1>
+    <div class="shop__inner">
+        <div class="fullscreen__body">
+            <h3 class="fullscreen__title blog-title">
+                {{ posts_item.title }}
+            </h3>
         </div>
     </div>
     <section class="blog">
     <div class="container">
-        <div class="card mb-3" style="max-width: 900px; margin: 0 auto;">
+        <div class="card mb-3" style="max-width: 1000px; margin: 0 auto;">
             <div class="card-body">
 
                 {% if posts_item.photo %}
-                    <img class="float-left mr-3" src="{{ posts_item.photo.url }}" width="350">
+                    <img class="float-left mr-3" src="{{ posts_item.photo.url }}" width="600">
                 {% else %}
                     <img class="float-left mr-3" src="https://picsum.photos/id/870/350/300?grayscale&blur=2">
                 {% endif %}
 
-
-                <h3 class="card-title">{{ posts_item.title }}</h3>
                 <p class="card-text">{{ posts_item.content|safe|linebreaks }}</p>
-                <a href="{% url 'blog' %}" class="login__btn detail__btn">Назад</a>
+                <a href="{% url 'blog' %}" class="blog__btn">Назад</a>
 
             </div>
         </div>

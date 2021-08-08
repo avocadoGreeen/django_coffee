@@ -3,20 +3,21 @@
 {% block content %}
 {% load static %}
 
-<div class="catalog__top">
-    <div class="container">
-        <h1 class="top__content-title catalog__title">
-            Каталог
-        </h1>
+    <div class="shop__inner">
+        <div class="fullscreen__body">
+            <h1 class="fullscreen__title">
+                Каталог
+            </h1>
+        </div>
     </div>
-</div>
-    <section class="catalog">
+
+    <section class="shop">
         <div class="container">
             <div class="shop__text">
-                <h2 class="shop__title title">
+                <h2 class="title">
                     Наши товары
                 </h2>
-                <div class="shop__subtitle">
+                <div class="info__text">
                     Мы предлагаем Вам широкий ассортимент различных сортов кофе из самых разнообразных стран.
                     Лёгкий цветочный аромат, густая консистенция, приятное и долгое послевкусие.
                 </div>
@@ -78,15 +79,15 @@
                         </div>
                     </div>
                 </div><div class="col">
-                    <div class="card h-100">
-                        <img src="{% static 'img/shop.jpg' %}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="shop__item-title">Compagnia Dell'Arabica Jamaica Blue Mountain 1,
-                                5 кг</h5>
-                            <div class="shop__item-price">45 500 ₽</div>
-                        </div>
+                <div class="card h-100">
+                    <img src="{% static 'img/shop.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="shop__item-title">Compagnia Dell'Arabica Jamaica Blue Mountain 1,
+                            5 кг</h5>
+                        <div class="shop__item-price">45 500 ₽</div>
                     </div>
                 </div>
+            </div>
                 <div class="col">
                     <div class="card h-100">
                         <img src="{% static 'img/shop2.jpg' %}" class="card-img-top" alt="...">
@@ -106,8 +107,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
         </div>
     </section>
 
