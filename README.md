@@ -53,11 +53,11 @@
 ![user](/screen/user.JPG)
 
 # Установка
-'''
+```
 Сохранить проект в папке с названием 'coffee_web'
 git clone https://github.com/avocode1353/django_coffee.git
 Добавить виртуальное окружение
 pip install Django
 pip install Pillow
 python manage.py runserver
-'''
+```
